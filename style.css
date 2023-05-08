@@ -1,0 +1,234 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../imges/9d7f8b8fca9ea36795a471f779271431.jpg);
+    background-size: cover;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+header{
+    height: 70px;
+    background-color: rgba(55, 27, 57, 0.287);
+    padding: 10px 0px;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content .brand{
+    font-size: 32px;
+    text-decoration: none;
+    color:white;
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li a{
+    display: block;
+    color: aliceblue;
+    min-width: 80%;
+    margin: 0px 5px;
+    padding: 5px;
+}
+.navbar-brand{
+    text-decoration: none;
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    color: rgb(226, 226, 229);
+    line-height: 2px;
+}
+.text-brand{
+    font-size: large;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: chartreuse;
+}
+.section-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 45%;
+    text-align: center;
+    background-color: rgb(207, 201, 195);
+    padding: 20px;
+}
+.section-form h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: rgb(110, 53, 6)
+
+}
+.section-form form input{
+    display: block;
+    width: 100%;
+    margin: 5px 0px;
+    height: 30px;
+    border: 1px black solid;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    outline: none;
+}
+.section-form  form  input[type="submit"]:hover {
+    opacity: 0.5;
+}
+nav ul#user_Info{
+    display: none;
+}
+.hi {
+ text-align: center;
+ background-color: rgb(173, 159, 153);
+ font-size: large;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.products{
+    width: 60%;
+    margin: 10px 0px;
+
+}
+.product-item{
+    display: flex;
+    width: 100%;
+    border: 1px solid #020202;
+    min-height: 150px;
+    margin-bottom: 20px;
+
+
+}
+.product-item-img{
+width: 25%;
+margin-right: 10px;
+}
+.product-item-action{
+    flex: 1;
+text-align: right;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+}    
+.product-item .add_to_cart{
+    display: block;
+    margin-left: auto;
+    background-color: rgb(35, 50, 12);
+    color: #ddd;
+    padding: 10px 20px;
+    border: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   cursor: pointer;
+}   
+.product-item .fav{
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    width: 20px;
+}
+.product-item-decs{
+    font-family: serif;
+    text-transform: capitalize;
+    color: white;
+}
+#user_Info{
+    display: flex;
+    flex-direction: row;
+}
+nav ul#user_Info li i{
+color: #ddd;
+font-size: 25px;
+cursor: pointer;
+}
+nav ul#user_Info li{
+    position: relative;
+    margin: 0px 10px;
+}
+nav ul#user_Info li .badge{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(116, 149, 138);
+    color: #ddd;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    top:-6px;
+    right: -7px;
+    left: 18px;
+    font-size: 13px;
+}
+.carts_products{
+position: absolute;
+width: 210px;
+transform: translate(-40px,0);
+background-color: #ddd;
+top: 40px;
+padding: 10px solid green;
+display: none;
+}
+.carts_products a{
+display: block;
+color: #020202;
+margin: 4px 0;
+padding: 0;
+background-color: green;
+color: #000;
+text-align: center;
+
+}
+.footer{
+    background-color: #666;
+  }
+  
+  .footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  
+  }
+  .footer .box-container .box{
+    flex:  1 1 25rem;
+  }
+  
+  .footer .box-container .h3{
+    color: #77d6cc;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box a{
+    display: block;
+    color: #93d185;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  
+  }
+  
+  .footer .box-container .box a:hover{
+    color: var(--pink);
+    text-decoration: underline;
+  }
+  
+  .footer .box-container .box img{
+    margin-top: 1rem;
+  }
+  .footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: 1rem solid rgba(0,0,0,0.1);
+  }
+  
+  .footer .credit span{
+    color: var(--pink);
+  }
